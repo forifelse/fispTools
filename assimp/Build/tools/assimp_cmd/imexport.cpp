@@ -1,4 +1,5 @@
 #include "imexport.h"
+#include <fstream>
 
 bool ImExport::load(const std::string& strInFile, const std::string& strFormat, const std::string& strContent, const std::string& strOutFile)
 {
@@ -25,10 +26,25 @@ bool ImExport::load(const std::string& strInFile, const std::string& strFormat, 
 		return false;
 	}
 	write(strOutFile, pScene);
+	read("out");
 	return true;
 }
 
 void ImExport::write(const std::string& strFile, const aiScene* pScene)
 {
+	std::ofstream ofs(strFile, std::ios::binary);
+	//ofs << pScene->mFlags << " , " << pScene->mNumMeshes << std::endl;
+	ofs.write((char*)pScene, sizeof(aiScene));
+	ofs.close();
+}
 
+void ImExport::read(const std::string& strFile)
+{
+	std::ifstream ifs(strFile, std::ios::binary);
+	//unsigned int uFlags, uNumMeshes;
+	//char sz[2];
+	//ifs >> uFlags >> sz >> uNumMeshes;
+	aiScene scene;
+	ifs.read((char*)&scene, sizeof(aiScene));
+	ifs.close();
 }
