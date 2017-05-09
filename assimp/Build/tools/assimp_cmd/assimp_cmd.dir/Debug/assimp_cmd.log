@@ -1,0 +1,1 @@
+﻿assimp-vc140-mt.lib(assimp-vc140-mt.dll) : fatal error LNK1112: module machine type 'x64' conflicts with target machine type 'X86'

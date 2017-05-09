@@ -1,0 +1,52 @@
+# CMake generation dependency list for this directory.
+E:/Projects/fispToos/assimp/CMakeLists.txt
+E:/Projects/fispToos/assimp/Build/CMakeFiles/3.8.1/CMakeSystem.cmake
+D:/program files/tools/CMake/share/cmake-3.8/Modules/CMakeSystemSpecificInitialize.cmake
+E:/Projects/fispToos/assimp/Build/CMakeFiles/3.8.1/CMakeCCompiler.cmake
+E:/Projects/fispToos/assimp/Build/CMakeFiles/3.8.1/CMakeCXXCompiler.cmake
+D:/program files/tools/CMake/share/cmake-3.8/Modules/CMakeSystemSpecificInformation.cmake
+D:/program files/tools/CMake/share/cmake-3.8/Modules/CMakeGenericSystem.cmake
+D:/program files/tools/CMake/share/cmake-3.8/Modules/Platform/Windows.cmake
+D:/program files/tools/CMake/share/cmake-3.8/Modules/Platform/WindowsPaths.cmake
+D:/program files/tools/CMake/share/cmake-3.8/Modules/CMakeCInformation.cmake
+D:/program files/tools/CMake/share/cmake-3.8/Modules/CMakeLanguageInformation.cmake
+D:/program files/tools/CMake/share/cmake-3.8/Modules/Platform/Windows-MSVC-C.cmake
+D:/program files/tools/CMake/share/cmake-3.8/Modules/Platform/Windows-MSVC.cmake
+E:/Projects/fispToos/assimp/Build/CMakeFiles/3.8.1/CMakeRCCompiler.cmake
+D:/program files/tools/CMake/share/cmake-3.8/Modules/CMakeRCInformation.cmake
+D:/program files/tools/CMake/share/cmake-3.8/Modules/CMakeCommonLanguageInclude.cmake
+D:/program files/tools/CMake/share/cmake-3.8/Modules/CMakeCXXInformation.cmake
+D:/program files/tools/CMake/share/cmake-3.8/Modules/CMakeLanguageInformation.cmake
+D:/program files/tools/CMake/share/cmake-3.8/Modules/Compiler/MSVC-CXX.cmake
+D:/program files/tools/CMake/share/cmake-3.8/Modules/Platform/Windows-MSVC-CXX.cmake
+D:/program files/tools/CMake/share/cmake-3.8/Modules/Platform/Windows-MSVC.cmake
+D:/program files/tools/CMake/share/cmake-3.8/Modules/CMakeCommonLanguageInclude.cmake
+E:/Projects/fispToos/assimp/revision.h.in
+E:/Projects/fispToos/assimp/include/assimp/config.h.in
+E:/Projects/fispToos/assimp/cmake-modules/FindPkgMacros.cmake
+E:/Projects/fispToos/assimp/cmake-modules/PrecompiledHeader.cmake
+E:/Projects/fispToos/assimp/cmake-modules/cmake_uninstall.cmake.in
+E:/Projects/fispToos/assimp/assimp-config.cmake.in
+E:/Projects/fispToos/assimp/assimp-config-version.cmake.in
+E:/Projects/fispToos/assimp/cmake-modules/FindDirectX.cmake
+E:/Projects/fispToos/assimp/cmake-modules/FindPkgMacros.cmake
+E:/Projects/fispToos/assimp/cmake-modules/FindZLIB.cmake
+E:/Projects/fispToos/assimp/cmake-modules/FindPkgMacros.cmake
+D:/program files/tools/CMake/share/cmake-3.8/Modules/FindPkgConfig.cmake
+D:/program files/tools/CMake/share/cmake-3.8/Modules/FindPackageHandleStandardArgs.cmake
+D:/program files/tools/CMake/share/cmake-3.8/Modules/FindPackageMessage.cmake
+D:/program files/tools/CMake/share/cmake-3.8/Modules/CheckIncludeFile.cmake
+D:/program files/tools/CMake/share/cmake-3.8/Modules/CheckTypeSize.cmake
+D:/program files/tools/CMake/share/cmake-3.8/Modules/CheckIncludeFile.cmake
+D:/program files/tools/CMake/share/cmake-3.8/Modules/CheckIncludeFileCXX.cmake
+D:/program files/tools/CMake/share/cmake-3.8/Modules/CheckFunctionExists.cmake
+D:/program files/tools/CMake/share/cmake-3.8/Modules/FindPkgConfig.cmake
+D:/program files/tools/CMake/share/cmake-3.8/Modules/FindPackageHandleStandardArgs.cmake
+D:/program files/tools/CMake/share/cmake-3.8/Modules/FindPackageMessage.cmake
+D:/program files/tools/CMake/share/cmake-3.8/Modules/FindDevIL.cmake
+D:/program files/tools/CMake/share/cmake-3.8/Modules/FindPackageHandleStandardArgs.cmake
+D:/program files/tools/CMake/share/cmake-3.8/Modules/FindPackageMessage.cmake
+D:/program files/tools/CMake/share/cmake-3.8/Modules/FindOpenGL.cmake
+D:/program files/tools/CMake/share/cmake-3.8/Modules/FindPackageHandleStandardArgs.cmake
+D:/program files/tools/CMake/share/cmake-3.8/Modules/FindPackageMessage.cmake
+E:/Projects/fispToos/assimp/assimp.pc.in

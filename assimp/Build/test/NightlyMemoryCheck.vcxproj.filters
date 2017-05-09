@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\Projects\fispToos\assimp\test\CMakeLists.txt" />
+    <CustomBuild Include="E:\Projects\fispToos\assimp\Build\CMakeFiles\fe1de3c4372d53b19719a982dbe3c9d8\NightlyMemoryCheck.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="E:\Projects\fispToos\assimp\Build\test\CMakeFiles\NightlyMemoryCheck" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{08FCEABC-20CB-328D-B7D9-A441E7569CB5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,19 @@
+﻿D:\program files\VS2017\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(387,5): warning MSB8028: The intermediate directory (x64\Release\) contains files shared from another project (zlibstatic.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Building Custom Rule E:/Projects/fispToos/assimp/contrib/zlib/CMakeLists.txt
+  CMake does not need to re-run because E:/Projects/fispToos/assimp/Build/contrib/zlib/CMakeFiles/generate.stamp is up-to-date.
+  adler32.c
+  compress.c
+  crc32.c
+  deflate.c
+  gzclose.c
+  gzlib.c
+  gzread.c
+  gzwrite.c
+  inflate.c
+  infback.c
+  inftrees.c
+  inffast.c
+  trees.c
+  uncompr.c
+  zutil.c
+  zlib.vcxproj -> E:\Projects\fispToos\assimp\Build\x64\Release\zlib.lib

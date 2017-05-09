@@ -1,0 +1,10 @@
+# CMake generation dependency list for this directory.
+E:/Projects/fispToos/assimp/contrib/zlib/CMakeLists.txt
+D:/program files/tools/CMake/share/cmake-3.8/Modules/CheckTypeSize.cmake
+D:/program files/tools/CMake/share/cmake-3.8/Modules/CheckIncludeFile.cmake
+D:/program files/tools/CMake/share/cmake-3.8/Modules/CheckIncludeFileCXX.cmake
+D:/program files/tools/CMake/share/cmake-3.8/Modules/CheckFunctionExists.cmake
+D:/program files/tools/CMake/share/cmake-3.8/Modules/CheckIncludeFile.cmake
+D:/program files/tools/CMake/share/cmake-3.8/Modules/CheckCSourceCompiles.cmake
+E:/Projects/fispToos/assimp/contrib/zlib/zlib.pc.cmakein
+E:/Projects/fispToos/assimp/contrib/zlib/zconf.h.cmakein

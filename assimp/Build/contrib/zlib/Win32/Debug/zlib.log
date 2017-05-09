@@ -1,0 +1,18 @@
+﻿  Building Custom Rule E:/Projects/fispToos/assimp/contrib/zlib/CMakeLists.txt
+  CMake does not need to re-run because E:/Projects/fispToos/assimp/Build/contrib/zlib/CMakeFiles/generate.stamp is up-to-date.
+  adler32.c
+  compress.c
+  crc32.c
+  deflate.c
+  gzclose.c
+  gzlib.c
+  gzread.c
+  gzwrite.c
+  inflate.c
+  infback.c
+  inftrees.c
+  inffast.c
+  trees.c
+  uncompr.c
+  zutil.c
+  zlib.vcxproj -> E:\Projects\fispToos\assimp\Build\Win32\Debug\zlib.lib

@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{5B25AD65-0CBB-3D74-B65F-5D095C542FD3}</ProjectGUID>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ZERO_CHECK</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Projects\fispToos\assimp\.;E:\Projects\fispToos\assimp\Build;E:\Projects\fispToos\assimp\Build\include;E:\Projects\fispToos\assimp\include;E:\Projects\fispToos\assimp\contrib\zlib;E:\Projects\fispToos\assimp\Build\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Projects\fispToos\assimp\.;E:\Projects\fispToos\assimp\Build;E:\Projects\fispToos\assimp\Build\include;E:\Projects\fispToos\assimp\include;E:\Projects\fispToos\assimp\contrib\zlib;E:\Projects\fispToos\assimp\Build\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Projects\fispToos\assimp\.;E:\Projects\fispToos\assimp\Build;E:\Projects\fispToos\assimp\Build\include;E:\Projects\fispToos\assimp\include;E:\Projects\fispToos\assimp\contrib\zlib;E:\Projects\fispToos\assimp\Build\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Projects\fispToos\assimp\.;E:\Projects\fispToos\assimp\Build;E:\Projects\fispToos\assimp\Build\include;E:\Projects\fispToos\assimp\include;E:\Projects\fispToos\assimp\contrib\zlib;E:\Projects\fispToos\assimp\Build\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\Projects\fispToos\assimp\Build\CMakeFiles\e2f4d172d6680a01fdeaee7a4f143e74\generate.stamp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"D:\program files\tools\CMake\bin\cmake.exe" -HE:/Projects/fispToos/assimp -BE:/Projects/fispToos/assimp/Build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/Projects/fispToos/assimp/Build/Assimp.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:/Projects/fispToos/assimp/Build/CMakeFiles/e2f4d172d6680a01fdeaee7a4f143e74/generate.stamp.rule;D:\program files\tools\CMake\share\cmake-3.8\Modules\CMakeCInformation.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CMakeCXXInformation.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CMakeRCInformation.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CTest.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CTestTargets.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CTestUseLaunchers.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CheckCSourceCompiles.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CheckFunctionExists.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CheckIncludeFile.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CheckIncludeFileCXX.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CheckTypeSize.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\Compiler\MSVC-CXX.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\DartConfiguration.tcl.in;D:\program files\tools\CMake\share\cmake-3.8\Modules\FindDevIL.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\FindOpenGL.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\FindPackageMessage.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\FindPkgConfig.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-C.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-CXX.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\Platform\Windows.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;E:\Projects\fispToos\assimp\Build\CMakeFiles\3.8.1\CMakeCCompiler.cmake;E:\Projects\fispToos\assimp\Build\CMakeFiles\3.8.1\CMakeCXXCompiler.cmake;E:\Projects\fispToos\assimp\Build\CMakeFiles\3.8.1\CMakeRCCompiler.cmake;E:\Projects\fispToos\assimp\Build\CMakeFiles\3.8.1\CMakeSystem.cmake;E:\Projects\fispToos\assimp\CMakeLists.txt;E:\Projects\fispToos\assimp\assimp-config-version.cmake.in;E:\Projects\fispToos\assimp\assimp-config.cmake.in;E:\Projects\fispToos\assimp\assimp.pc.in;E:\Projects\fispToos\assimp\cmake-modules\FindDirectX.cmake;E:\Projects\fispToos\assimp\cmake-modules\FindPkgMacros.cmake;E:\Projects\fispToos\assimp\cmake-modules\FindRT.cmake;E:\Projects\fispToos\assimp\cmake-modules\FindZLIB.cmake;E:\Projects\fispToos\assimp\cmake-modules\PrecompiledHeader.cmake;E:\Projects\fispToos\assimp\cmake-modules\cmake_uninstall.cmake.in;E:\Projects\fispToos\assimp\code\CMakeLists.txt;E:\Projects\fispToos\assimp\contrib\CMakeLists.txt;E:\Projects\fispToos\assimp\contrib\irrXML\CMakeLists.txt;E:\Projects\fispToos\assimp\contrib\zlib\CMakeLists.txt;E:\Projects\fispToos\assimp\contrib\zlib\zconf.h.cmakein;E:\Projects\fispToos\assimp\contrib\zlib\zlib.pc.cmakein;E:\Projects\fispToos\assimp\include\assimp\config.h.in;E:\Projects\fispToos\assimp\revision.h.in;E:\Projects\fispToos\assimp\test\CMakeLists.txt;E:\Projects\fispToos\assimp\test\headercheck\CMakeLists.txt;E:\Projects\fispToos\assimp\tools\assimp_cmd\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\Projects\fispToos\assimp\Build\CMakeFiles\generate.stamp;E:\Projects\fispToos\assimp\Build\contrib\zlib\CMakeFiles\generate.stamp;E:\Projects\fispToos\assimp\Build\contrib\CMakeFiles\generate.stamp;E:\Projects\fispToos\assimp\Build\contrib\irrXML\CMakeFiles\generate.stamp;E:\Projects\fispToos\assimp\Build\code\CMakeFiles\generate.stamp;E:\Projects\fispToos\assimp\Build\tools\assimp_cmd\CMakeFiles\generate.stamp;E:\Projects\fispToos\assimp\Build\test\CMakeFiles\generate.stamp;E:\Projects\fispToos\assimp\Build\test\headercheck\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"D:\program files\tools\CMake\bin\cmake.exe" -HE:/Projects/fispToos/assimp -BE:/Projects/fispToos/assimp/Build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/Projects/fispToos/assimp/Build/Assimp.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:/Projects/fispToos/assimp/Build/CMakeFiles/e2f4d172d6680a01fdeaee7a4f143e74/generate.stamp.rule;D:\program files\tools\CMake\share\cmake-3.8\Modules\CMakeCInformation.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CMakeCXXInformation.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CMakeRCInformation.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CTest.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CTestTargets.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CTestUseLaunchers.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CheckCSourceCompiles.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CheckFunctionExists.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CheckIncludeFile.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CheckIncludeFileCXX.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CheckTypeSize.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\Compiler\MSVC-CXX.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\DartConfiguration.tcl.in;D:\program files\tools\CMake\share\cmake-3.8\Modules\FindDevIL.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\FindOpenGL.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\FindPackageMessage.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\FindPkgConfig.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-C.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-CXX.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\Platform\Windows.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;E:\Projects\fispToos\assimp\Build\CMakeFiles\3.8.1\CMakeCCompiler.cmake;E:\Projects\fispToos\assimp\Build\CMakeFiles\3.8.1\CMakeCXXCompiler.cmake;E:\Projects\fispToos\assimp\Build\CMakeFiles\3.8.1\CMakeRCCompiler.cmake;E:\Projects\fispToos\assimp\Build\CMakeFiles\3.8.1\CMakeSystem.cmake;E:\Projects\fispToos\assimp\CMakeLists.txt;E:\Projects\fispToos\assimp\assimp-config-version.cmake.in;E:\Projects\fispToos\assimp\assimp-config.cmake.in;E:\Projects\fispToos\assimp\assimp.pc.in;E:\Projects\fispToos\assimp\cmake-modules\FindDirectX.cmake;E:\Projects\fispToos\assimp\cmake-modules\FindPkgMacros.cmake;E:\Projects\fispToos\assimp\cmake-modules\FindRT.cmake;E:\Projects\fispToos\assimp\cmake-modules\FindZLIB.cmake;E:\Projects\fispToos\assimp\cmake-modules\PrecompiledHeader.cmake;E:\Projects\fispToos\assimp\cmake-modules\cmake_uninstall.cmake.in;E:\Projects\fispToos\assimp\code\CMakeLists.txt;E:\Projects\fispToos\assimp\contrib\CMakeLists.txt;E:\Projects\fispToos\assimp\contrib\irrXML\CMakeLists.txt;E:\Projects\fispToos\assimp\contrib\zlib\CMakeLists.txt;E:\Projects\fispToos\assimp\contrib\zlib\zconf.h.cmakein;E:\Projects\fispToos\assimp\contrib\zlib\zlib.pc.cmakein;E:\Projects\fispToos\assimp\include\assimp\config.h.in;E:\Projects\fispToos\assimp\revision.h.in;E:\Projects\fispToos\assimp\test\CMakeLists.txt;E:\Projects\fispToos\assimp\test\headercheck\CMakeLists.txt;E:\Projects\fispToos\assimp\tools\assimp_cmd\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\Projects\fispToos\assimp\Build\CMakeFiles\generate.stamp;E:\Projects\fispToos\assimp\Build\contrib\zlib\CMakeFiles\generate.stamp;E:\Projects\fispToos\assimp\Build\contrib\CMakeFiles\generate.stamp;E:\Projects\fispToos\assimp\Build\contrib\irrXML\CMakeFiles\generate.stamp;E:\Projects\fispToos\assimp\Build\code\CMakeFiles\generate.stamp;E:\Projects\fispToos\assimp\Build\tools\assimp_cmd\CMakeFiles\generate.stamp;E:\Projects\fispToos\assimp\Build\test\CMakeFiles\generate.stamp;E:\Projects\fispToos\assimp\Build\test\headercheck\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"D:\program files\tools\CMake\bin\cmake.exe" -HE:/Projects/fispToos/assimp -BE:/Projects/fispToos/assimp/Build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/Projects/fispToos/assimp/Build/Assimp.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:/Projects/fispToos/assimp/Build/CMakeFiles/e2f4d172d6680a01fdeaee7a4f143e74/generate.stamp.rule;D:\program files\tools\CMake\share\cmake-3.8\Modules\CMakeCInformation.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CMakeCXXInformation.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CMakeRCInformation.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CTest.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CTestTargets.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CTestUseLaunchers.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CheckCSourceCompiles.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CheckFunctionExists.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CheckIncludeFile.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CheckIncludeFileCXX.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CheckTypeSize.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\Compiler\MSVC-CXX.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\DartConfiguration.tcl.in;D:\program files\tools\CMake\share\cmake-3.8\Modules\FindDevIL.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\FindOpenGL.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\FindPackageMessage.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\FindPkgConfig.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-C.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-CXX.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\Platform\Windows.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;E:\Projects\fispToos\assimp\Build\CMakeFiles\3.8.1\CMakeCCompiler.cmake;E:\Projects\fispToos\assimp\Build\CMakeFiles\3.8.1\CMakeCXXCompiler.cmake;E:\Projects\fispToos\assimp\Build\CMakeFiles\3.8.1\CMakeRCCompiler.cmake;E:\Projects\fispToos\assimp\Build\CMakeFiles\3.8.1\CMakeSystem.cmake;E:\Projects\fispToos\assimp\CMakeLists.txt;E:\Projects\fispToos\assimp\assimp-config-version.cmake.in;E:\Projects\fispToos\assimp\assimp-config.cmake.in;E:\Projects\fispToos\assimp\assimp.pc.in;E:\Projects\fispToos\assimp\cmake-modules\FindDirectX.cmake;E:\Projects\fispToos\assimp\cmake-modules\FindPkgMacros.cmake;E:\Projects\fispToos\assimp\cmake-modules\FindRT.cmake;E:\Projects\fispToos\assimp\cmake-modules\FindZLIB.cmake;E:\Projects\fispToos\assimp\cmake-modules\PrecompiledHeader.cmake;E:\Projects\fispToos\assimp\cmake-modules\cmake_uninstall.cmake.in;E:\Projects\fispToos\assimp\code\CMakeLists.txt;E:\Projects\fispToos\assimp\contrib\CMakeLists.txt;E:\Projects\fispToos\assimp\contrib\irrXML\CMakeLists.txt;E:\Projects\fispToos\assimp\contrib\zlib\CMakeLists.txt;E:\Projects\fispToos\assimp\contrib\zlib\zconf.h.cmakein;E:\Projects\fispToos\assimp\contrib\zlib\zlib.pc.cmakein;E:\Projects\fispToos\assimp\include\assimp\config.h.in;E:\Projects\fispToos\assimp\revision.h.in;E:\Projects\fispToos\assimp\test\CMakeLists.txt;E:\Projects\fispToos\assimp\test\headercheck\CMakeLists.txt;E:\Projects\fispToos\assimp\tools\assimp_cmd\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\Projects\fispToos\assimp\Build\CMakeFiles\generate.stamp;E:\Projects\fispToos\assimp\Build\contrib\zlib\CMakeFiles\generate.stamp;E:\Projects\fispToos\assimp\Build\contrib\CMakeFiles\generate.stamp;E:\Projects\fispToos\assimp\Build\contrib\irrXML\CMakeFiles\generate.stamp;E:\Projects\fispToos\assimp\Build\code\CMakeFiles\generate.stamp;E:\Projects\fispToos\assimp\Build\tools\assimp_cmd\CMakeFiles\generate.stamp;E:\Projects\fispToos\assimp\Build\test\CMakeFiles\generate.stamp;E:\Projects\fispToos\assimp\Build\test\headercheck\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"D:\program files\tools\CMake\bin\cmake.exe" -HE:/Projects/fispToos/assimp -BE:/Projects/fispToos/assimp/Build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/Projects/fispToos/assimp/Build/Assimp.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:/Projects/fispToos/assimp/Build/CMakeFiles/e2f4d172d6680a01fdeaee7a4f143e74/generate.stamp.rule;D:\program files\tools\CMake\share\cmake-3.8\Modules\CMakeCInformation.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CMakeCXXInformation.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CMakeRCInformation.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CTest.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CTestTargets.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CTestUseLaunchers.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CheckCSourceCompiles.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CheckFunctionExists.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CheckIncludeFile.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CheckIncludeFileCXX.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\CheckTypeSize.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\Compiler\MSVC-CXX.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\DartConfiguration.tcl.in;D:\program files\tools\CMake\share\cmake-3.8\Modules\FindDevIL.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\FindOpenGL.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\FindPackageMessage.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\FindPkgConfig.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-C.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-CXX.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\Platform\Windows.cmake;D:\program files\tools\CMake\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;E:\Projects\fispToos\assimp\Build\CMakeFiles\3.8.1\CMakeCCompiler.cmake;E:\Projects\fispToos\assimp\Build\CMakeFiles\3.8.1\CMakeCXXCompiler.cmake;E:\Projects\fispToos\assimp\Build\CMakeFiles\3.8.1\CMakeRCCompiler.cmake;E:\Projects\fispToos\assimp\Build\CMakeFiles\3.8.1\CMakeSystem.cmake;E:\Projects\fispToos\assimp\CMakeLists.txt;E:\Projects\fispToos\assimp\assimp-config-version.cmake.in;E:\Projects\fispToos\assimp\assimp-config.cmake.in;E:\Projects\fispToos\assimp\assimp.pc.in;E:\Projects\fispToos\assimp\cmake-modules\FindDirectX.cmake;E:\Projects\fispToos\assimp\cmake-modules\FindPkgMacros.cmake;E:\Projects\fispToos\assimp\cmake-modules\FindRT.cmake;E:\Projects\fispToos\assimp\cmake-modules\FindZLIB.cmake;E:\Projects\fispToos\assimp\cmake-modules\PrecompiledHeader.cmake;E:\Projects\fispToos\assimp\cmake-modules\cmake_uninstall.cmake.in;E:\Projects\fispToos\assimp\code\CMakeLists.txt;E:\Projects\fispToos\assimp\contrib\CMakeLists.txt;E:\Projects\fispToos\assimp\contrib\irrXML\CMakeLists.txt;E:\Projects\fispToos\assimp\contrib\zlib\CMakeLists.txt;E:\Projects\fispToos\assimp\contrib\zlib\zconf.h.cmakein;E:\Projects\fispToos\assimp\contrib\zlib\zlib.pc.cmakein;E:\Projects\fispToos\assimp\include\assimp\config.h.in;E:\Projects\fispToos\assimp\revision.h.in;E:\Projects\fispToos\assimp\test\CMakeLists.txt;E:\Projects\fispToos\assimp\test\headercheck\CMakeLists.txt;E:\Projects\fispToos\assimp\tools\assimp_cmd\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\Projects\fispToos\assimp\Build\CMakeFiles\generate.stamp;E:\Projects\fispToos\assimp\Build\contrib\zlib\CMakeFiles\generate.stamp;E:\Projects\fispToos\assimp\Build\contrib\CMakeFiles\generate.stamp;E:\Projects\fispToos\assimp\Build\contrib\irrXML\CMakeFiles\generate.stamp;E:\Projects\fispToos\assimp\Build\code\CMakeFiles\generate.stamp;E:\Projects\fispToos\assimp\Build\tools\assimp_cmd\CMakeFiles\generate.stamp;E:\Projects\fispToos\assimp\Build\test\CMakeFiles\generate.stamp;E:\Projects\fispToos\assimp\Build\test\headercheck\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

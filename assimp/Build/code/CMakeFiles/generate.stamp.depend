@@ -1,0 +1,5 @@
+# CMake generation dependency list for this directory.
+E:/Projects/fispToos/assimp/code/CMakeLists.txt
+E:/Projects/fispToos/assimp/cmake-modules/FindRT.cmake
+D:/program files/tools/CMake/share/cmake-3.8/Modules/FindPackageHandleStandardArgs.cmake
+D:/program files/tools/CMake/share/cmake-3.8/Modules/FindPackageMessage.cmake

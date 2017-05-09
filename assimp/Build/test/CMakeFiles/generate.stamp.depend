@@ -1,0 +1,6 @@
+# CMake generation dependency list for this directory.
+E:/Projects/fispToos/assimp/test/CMakeLists.txt
+D:/program files/tools/CMake/share/cmake-3.8/Modules/CTest.cmake
+D:/program files/tools/CMake/share/cmake-3.8/Modules/CTestUseLaunchers.cmake
+D:/program files/tools/CMake/share/cmake-3.8/Modules/CTestTargets.cmake
+D:/program files/tools/CMake/share/cmake-3.8/Modules/DartConfiguration.tcl.in

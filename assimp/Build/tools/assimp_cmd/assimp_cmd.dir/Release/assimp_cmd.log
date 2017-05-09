@@ -1,0 +1,9 @@
+﻿  Building Custom Rule E:/Projects/fispToos/assimp/tools/assimp_cmd/CMakeLists.txt
+  CMake does not need to re-run because E:/Projects/fispToos/assimp/Build/tools/assimp_cmd/CMakeFiles/generate.stamp is up-to-date.
+  CompareDump.cpp
+  ImageExtractor.cpp
+  Main.cpp
+  WriteDumb.cpp
+  Info.cpp
+  Export.cpp
+  assimp_cmd.vcxproj -> E:\Projects\fispToos\assimp\Build\tools\assimp_cmd\Release\assimp.exe
