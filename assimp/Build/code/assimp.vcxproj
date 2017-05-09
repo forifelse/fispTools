@@ -145,7 +145,7 @@
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>_WINDOWS;OPENDDL_NO_USE_CPP11;ASSIMP_BUILD_NO_C4D_IMPORTER;ASSIMP_IMPORTER_GLTF_USE_OPEN3DGC=1;ASSIMP_BUILD_DLL_EXPORT;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;OPENDDLPARSER_BUILD;CMAKE_INTDIR="Debug";assimp_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_WINDOWS;OPENDDL_NO_USE_CPP11;ASSIMP_BUILD_NO_C4D_IMPORTER;ASSIMP_IMPORTER_GLTF_USE_OPEN3DGC=1;ASSIMP_BUILD_DLL_EXPORT;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;OPENDDLPARSER_BUILD;NO_FSEEKO;CMAKE_INTDIR="Debug";assimp_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
@@ -474,6 +474,7 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\contrib\irrXML\irrXML.cpp" />
     <ClInclude Include="..\..\code\fast_atof.h" />
     <ClInclude Include="..\..\code\qnan.h" />
     <ClInclude Include="..\..\code\BaseImporter.h" />
@@ -513,6 +514,12 @@
     <ClInclude Include="..\..\code\XMLTools.h" />
     <ClInclude Include="..\..\code\IOStreamBuffer.h" />
     <ClInclude Include="..\..\code\CreateAnimMesh.h" />
+    <ClInclude Include="..\..\contrib\irrXML\CXMLReaderImpl.h" />
+    <ClInclude Include="..\..\contrib\irrXML\heapsort.h" />
+    <ClInclude Include="..\..\contrib\irrXML\irrArray.h" />
+    <ClInclude Include="..\..\contrib\irrXML\irrString.h" />
+    <ClInclude Include="..\..\contrib\irrXML\irrTypes.h" />
+    <ClInclude Include="..\..\contrib\irrXML\irrXML.h" />
     <ClInclude Include="..\..\include\assimp\DefaultLogger.hpp" />
     <ClInclude Include="..\..\include\assimp\LogStream.hpp" />
     <ClInclude Include="..\..\include\assimp\Logger.hpp" />
@@ -990,16 +997,6 @@
     <ClCompile Include="..\..\contrib\Open3DGC\o3dgcDynamicVectorEncoder.cpp" />
     <ClCompile Include="..\..\contrib\Open3DGC\o3dgcTools.cpp" />
     <ClCompile Include="..\..\contrib\Open3DGC\o3dgcTriangleFans.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\Build\contrib\irrXML\IrrXML.vcxproj">
-      <Project>{2C839135-DDEF-3173-931C-600388E3B034}</Project>
-      <Name>IrrXML</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Build\contrib\zlib\zlibstatic.vcxproj">
-      <Project>{2942A7B2-7CD8-305B-ACDB-C124FB71A7FF}</Project>
-      <Name>zlibstatic</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

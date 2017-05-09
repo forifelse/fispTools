@@ -193,6 +193,9 @@
     <ClCompile Include="..\..\contrib\Open3DGC\o3dgcDynamicVectorEncoder.cpp" />
     <ClCompile Include="..\..\contrib\Open3DGC\o3dgcTools.cpp" />
     <ClCompile Include="..\..\contrib\Open3DGC\o3dgcTriangleFans.cpp" />
+    <ClCompile Include="..\..\contrib\irrXML\irrXML.cpp">
+      <Filter>IrrXML</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\code\fast_atof.h" />
@@ -474,5 +477,28 @@
     <ClInclude Include="..\..\include\assimp\Compiler\pushpack1.h" />
     <ClInclude Include="..\..\include\assimp\Compiler\poppack1.h" />
     <ClInclude Include="..\..\include\assimp\Compiler\pstdint.h" />
+    <ClInclude Include="..\..\contrib\irrXML\CXMLReaderImpl.h">
+      <Filter>IrrXML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\contrib\irrXML\heapsort.h">
+      <Filter>IrrXML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\contrib\irrXML\irrArray.h">
+      <Filter>IrrXML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\contrib\irrXML\irrString.h">
+      <Filter>IrrXML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\contrib\irrXML\irrTypes.h">
+      <Filter>IrrXML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\contrib\irrXML\irrXML.h">
+      <Filter>IrrXML</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="IrrXML">
+      <UniqueIdentifier>{6bf96e1b-faeb-44c5-ae68-636d7524856e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
 </Project>

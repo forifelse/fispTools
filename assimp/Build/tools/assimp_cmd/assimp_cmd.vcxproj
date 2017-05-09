@@ -159,7 +159,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;zlib.lib;IrrXML.lib;assimp.lib</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;zlib.lib;assimp.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(OutDir)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>Debug</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>
@@ -281,10 +281,6 @@
     <ClCompile Include="..\..\..\tools\assimp_cmd\Export.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Build\contrib\irrXML\IrrXML.vcxproj">
-      <Project>{2C839135-DDEF-3173-931C-600388E3B034}</Project>
-      <Name>IrrXML</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\..\Build\code\assimp.vcxproj">
       <Project>{61E35FE8-2B02-3946-A335-82193963B40D}</Project>
       <Name>assimp</Name>
