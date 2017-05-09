@@ -7,7 +7,7 @@
 class ImExport
 {
 public:
-	bool load(const std::string& strInFile, const std::string& strOutFile, const std::string& opts);
+	bool load(const std::string& strInFile, const std::string& strFormat, const std::string& strContent, const std::string& strOutFile);
 	void write(const std::string& strFile, const aiScene* pScene);
 private:
 	aiScene*	mpScene;

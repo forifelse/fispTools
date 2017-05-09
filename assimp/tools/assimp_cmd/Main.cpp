@@ -72,16 +72,17 @@ const char* AICMD_MSG_HELP =
 ;
 
 const char* MSG_HELP =
-"assimp <InFile> [OutFile] [Content] [Format]\n\n"
+"assimp <InFile> [Format] [Content] [OutFile]\n\n"
 " InFile       - File name of import\n"
-" OutFile      - File name of export\n"
-"\n"
-" Content:\n"
-" -scene       - Scene. This is default value\n"
 "\n"
 " Format:\n"
 " -b           - Binary. This is default value\n"
 " -j           - Json\n"
+"\n"
+" Content:\n"
+" -scene       - Scene. This is default value\n"
+"\n"
+" OutFile      - File name of export\n"
 "\n"
 ;
 
@@ -111,9 +112,14 @@ int main (int argc, char* argv[])
 		return 0;
 	}
 	//
-	std::string param[4] = {};
+	std::string param[5] = {};
+	param[0] = argv[0];
+	param[1] = argv[1];
+	param[2] = (argc > 2) ? argv[2] : "-b";
+	param[3] = (argc > 3) ? argv[3] : "scene";
+	param[4] = (argc > 4) ? argv[4] : param[1] + "_out";
 	ImExport imex;
-	imex.load(param[1], param[2], param[3]);
+	imex.load(param[1], param[2], param[3], param[4]);
 	//
 	system("pause");
 	return 0;

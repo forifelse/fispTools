@@ -1,6 +1,6 @@
 #include "imexport.h"
 
-bool ImExport::load(const std::string& strInFile, const std::string& strOutFile, const std::string& opts)
+bool ImExport::load(const std::string& strInFile, const std::string& strFormat, const std::string& strContent, const std::string& strOutFile)
 {
 	Assimp::Importer importer;
 
