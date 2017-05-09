@@ -1,47 +1,18 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="E:\Projects\fispToos\assimp\tools\assimp_cmd\CompareDump.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\Projects\fispToos\assimp\tools\assimp_cmd\ImageExtractor.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\Projects\fispToos\assimp\tools\assimp_cmd\Main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\Projects\fispToos\assimp\tools\assimp_cmd\WriteDumb.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\Projects\fispToos\assimp\tools\assimp_cmd\Info.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="E:\Projects\fispToos\assimp\tools\assimp_cmd\Export.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+    <ClCompile Include="..\..\..\tools\assimp_cmd\CompareDump.cpp" />
+    <ClCompile Include="..\..\..\tools\assimp_cmd\ImageExtractor.cpp" />
+    <ClCompile Include="..\..\..\tools\assimp_cmd\Main.cpp" />
+    <ClCompile Include="..\..\..\tools\assimp_cmd\WriteDumb.cpp" />
+    <ClCompile Include="..\..\..\tools\assimp_cmd\Info.cpp" />
+    <ClCompile Include="..\..\..\tools\assimp_cmd\Export.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="E:\Projects\fispToos\assimp\tools\assimp_cmd\Main.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\Projects\fispToos\assimp\tools\assimp_cmd\resource.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+    <ClInclude Include="..\..\..\tools\assimp_cmd\Main.h" />
+    <ClInclude Include="..\..\..\tools\assimp_cmd\resource.h" />
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="E:\Projects\fispToos\assimp\tools\assimp_cmd\CMakeLists.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="E:\Projects\fispToos\assimp\tools\assimp_cmd\assimp_cmd.rc">
-      <Filter>Source Files</Filter>
-    </ResourceCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{92385ACB-98C3-34A6-8A77-4D0F152BF9D4}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{F218DEA6-3D16-3488-9DA5-7EB3FF1F5420}</UniqueIdentifier>
-    </Filter>
+    <ResourceCompile Include="..\..\..\tools\assimp_cmd\assimp_cmd.rc" />
   </ItemGroup>
 </Project>

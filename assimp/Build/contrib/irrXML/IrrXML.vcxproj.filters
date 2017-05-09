@@ -1,39 +1,14 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="E:\Projects\fispToos\assimp\contrib\irrXML\irrXML.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+    <ClCompile Include="..\..\..\contrib\irrXML\irrXML.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="E:\Projects\fispToos\assimp\contrib\irrXML\CXMLReaderImpl.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\Projects\fispToos\assimp\contrib\irrXML\heapsort.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\Projects\fispToos\assimp\contrib\irrXML\irrArray.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\Projects\fispToos\assimp\contrib\irrXML\irrString.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\Projects\fispToos\assimp\contrib\irrXML\irrTypes.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="E:\Projects\fispToos\assimp\contrib\irrXML\irrXML.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <CustomBuild Include="E:\Projects\fispToos\assimp\contrib\irrXML\CMakeLists.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{92385ACB-98C3-34A6-8A77-4D0F152BF9D4}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{F218DEA6-3D16-3488-9DA5-7EB3FF1F5420}</UniqueIdentifier>
-    </Filter>
+    <ClInclude Include="..\..\..\contrib\irrXML\CXMLReaderImpl.h" />
+    <ClInclude Include="..\..\..\contrib\irrXML\heapsort.h" />
+    <ClInclude Include="..\..\..\contrib\irrXML\irrArray.h" />
+    <ClInclude Include="..\..\..\contrib\irrXML\irrString.h" />
+    <ClInclude Include="..\..\..\contrib\irrXML\irrTypes.h" />
+    <ClInclude Include="..\..\..\contrib\irrXML\irrXML.h" />
   </ItemGroup>
 </Project>
