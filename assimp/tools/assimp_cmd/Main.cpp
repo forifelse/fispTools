@@ -71,16 +71,54 @@ const char* AICMD_MSG_HELP =
 "\n Use \'assimp <verb> --help\' for detailed help on a command.\n"
 ;
 
+const char* MSG_HELP =
+"assimp <InFile> [OutFile] [Content] [Format]\n\n"
+" InFile       - File name of import\n"
+" OutFile      - File name of export\n"
+"\n"
+" Content:\n"
+" -scene       - Scene. This is default value\n"
+"\n"
+" Format:\n"
+" -b           - Binary. This is default value\n"
+" -j           - Json\n"
+"\n"
+;
+
 /*extern*/ Assimp::Importer* globalImporter = NULL;
 
 #ifndef ASSIMP_BUILD_NO_EXPORT
 /*extern*/ Assimp::Exporter* globalExporter = NULL;
 #endif
 
+#include "tools\assimp_cmd\imexport.h"
+
 // ------------------------------------------------------------------------------
 // Application entry point
 int main (int argc, char* argv[])
 {
+	if (argc <= 1)
+	{
+		printf("assimp: No command specified. Use \'assimp ?\' for a detailed command list\n\n");
+		printf("%s", MSG_HELP);
+		system("pause");
+		return 0;
+	}
+	if (!strcmp(argv[1], "?") || !strcmp(argv[1], "help") || !strcmp(argv[1], "-help") || !strcmp(argv[1], "-h"))
+	{
+		printf("%s", MSG_HELP);
+		system("pause");
+		return 0;
+	}
+	//
+	std::string param[4] = {};
+	ImExport imex;
+	imex.load(param[1], param[2], param[3]);
+	//
+	system("pause");
+	return 0;
+
+	//
 	if (argc <= 1)	{
 		printf("assimp: No command specified. Use \'assimp help\' for a detailed command list\n");
 		return 0;
