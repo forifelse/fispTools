@@ -5,6 +5,8 @@ struct SCamera
 {
 	float	tx,ty,tz;
 	float	rx,ry,rz;
+
+	SCamera() { memset(this, 0, sizeof(SCamera)); }
 };
 
 struct SLitPoint
@@ -14,17 +16,21 @@ struct SLitPoint
 	float	r,g,b;
 	float	radius;
 	float	intensity;
+
+	SLitPoint() { memset(this, 0, sizeof(SLitPoint)); }
 };
 
 struct SLitSpot : public SLitPoint
 {
 	float	toward;
 	float	inner, outer;
+
+	SLitSpot() { memset(this, 0, sizeof(SLitSpot)); }
 };
 
 struct SLitDire
 {
-
+	SLitDire() { memset(this, 0, sizeof(SLitDire)); }
 };
 
 struct SMaterial
@@ -84,6 +90,16 @@ struct SMesh
 	bool			bVisible;
 	unsigned int	uNumSub;
 	SSubMesh*		pSub;
+	//
+	float			tx, ty, tz, rx, ry, rz, sx, sy, sz;
+	bool			bCastShadow;
+	bool			bReceiveShadow;
+	bool			bSimulate;
+	float			mass;
+	bool			bDamage;
+	// instance ?
+
+	SMesh() { memset(this, 0, sizeof(SMesh)); }
 };
 
 struct SScene
@@ -92,6 +108,8 @@ struct SScene
 	SCamera			camera;
 	unsigned int	uNumMesh;
 	SMesh*			pMesh;
+
+	SScene() { memset(this, 0, sizeof(SScene)); }
 };
 
 struct SceneRW
@@ -124,11 +142,11 @@ private:
 public:
 	void sceneWrite(const SScene* pScene, const std::string& strFile)
 	{
-
+		write<SScene>(pScene, strFile);
 	}
 
 	void sceneRead(SScene& scene, const std::string& strFile)
 	{
-
+		read<SScene>(scene, strFile);
 	}
 };
