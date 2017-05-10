@@ -92,7 +92,8 @@ struct SMesh
 	unsigned int	uNumSubOther;
 	SSubMesh*		pSubOther;
 	//
-	float			tx, ty, tz, rx, ry, rz, sx, sy, sz;
+	float			trans[16];
+	//float			tx, ty, tz, rx, ry, rz, sx, sy, sz;
 	bool			bCastShadow;
 	bool			bReceiveShadow;
 	bool			bSimulate;
@@ -107,27 +108,39 @@ struct SMesh
 	SMesh() { memset(this, 0, sizeof(SMesh)); }
 };
 
+struct SRoot
+{
+	unsigned int	uNumChild;
+	unsigned int*	pChildren;
+};
+
+struct SBank
+{
+	// bank data
+	SMesh*			pMesh;
+	SGeometry*		pGeom;
+	SMaterial*		pMate;
+	SLitPoint*		pLitPoint;
+	SLitSpot*		pLitSpot;
+	SLitDire*		pLitDire;
+
+	SBank() { memset(this, 0, sizeof(SBank)); }
+};
+
 struct SScene
 {
-	// shared data
+	// bank data
+	SBank*			pBank;
 	unsigned int	uNumMesh;
-	SMesh*			pMesh;
-	//unsigned int	uNumSub;
-	//SSubMesh*		pSubMesh;
 	unsigned int	uNumGeom;
-	SGeometry*		pGeom;
 	unsigned int	uNumMate;
-	SMaterial*		pMate;
 	unsigned int	uNumLitPoint;
-	SLitPoint*		pLitPoint;
 	unsigned int	uNumLitSpot;
-	SLitSpot*		pLitSpot;
 	unsigned int	uNumLitDire;
-	SLitDire*		pLitDire;
 	// scene data
 	std::string		strName;
 	SCamera			camera;
-	SMesh*			pRoot;
+	SRoot*			pRoot;
 
 	SScene() { memset(this, 0, sizeof(SScene)); }
 };
