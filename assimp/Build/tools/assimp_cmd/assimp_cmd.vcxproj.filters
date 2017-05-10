@@ -13,6 +13,7 @@
     <ClInclude Include="..\..\..\tools\assimp_cmd\Main.h" />
     <ClInclude Include="..\..\..\tools\assimp_cmd\resource.h" />
     <ClInclude Include="imexport.h" />
+    <ClInclude Include="scenedata.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="..\..\..\tools\assimp_cmd\assimp_cmd.rc" />

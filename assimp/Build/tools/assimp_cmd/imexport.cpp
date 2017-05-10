@@ -47,4 +47,5 @@ void ImExport::read(const std::string& strFile)
 	aiScene scene;
 	ifs.read((char*)&scene, sizeof(aiScene));
 	ifs.close();
+	memset(&scene, 0, sizeof(aiScene));
 }

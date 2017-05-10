@@ -1,11 +1,12 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.10
+VisualStudioVersion = 15.0.26228.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "assimp", "code\assimp.vcxproj", "{61E35FE8-2B02-3946-A335-82193963B40D}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "assimp_cmd", "tools\assimp_cmd\assimp_cmd.vcxproj", "{1B717454-8E29-3841-A30E-9C6F7FC843FB}"
 	ProjectSection(ProjectDependencies) = postProject
+		{2942A7B2-7CD8-305B-ACDB-C124FB71A7FF} = {2942A7B2-7CD8-305B-ACDB-C124FB71A7FF}
 		{61E35FE8-2B02-3946-A335-82193963B40D} = {61E35FE8-2B02-3946-A335-82193963B40D}
 	EndProjectSection
 EndProject

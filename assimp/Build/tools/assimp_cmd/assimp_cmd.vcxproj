@@ -272,6 +272,7 @@
     <ClInclude Include="..\..\..\tools\assimp_cmd\Main.h" />
     <ClInclude Include="..\..\..\tools\assimp_cmd\resource.h" />
     <ClInclude Include="imexport.h" />
+    <ClInclude Include="scenedata.h" />
     <ResourceCompile Include="..\..\..\tools\assimp_cmd\assimp_cmd.rc" />
     <ClCompile Include="..\..\..\tools\assimp_cmd\CompareDump.cpp" />
     <ClCompile Include="..\..\..\tools\assimp_cmd\ImageExtractor.cpp" />
