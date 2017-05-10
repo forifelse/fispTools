@@ -88,8 +88,9 @@ struct SMesh
 {
 	std::string		strName;
 	bool			bVisible;
-	unsigned int	uNumSub;
-	SSubMesh*		pSub;
+	SSubMesh		subFirst;
+	unsigned int	uNumSubOther;
+	SSubMesh*		pSubOther;
 	//
 	float			tx, ty, tz, rx, ry, rz, sx, sy, sz;
 	bool			bCastShadow;
@@ -97,6 +98,10 @@ struct SMesh
 	bool			bSimulate;
 	float			mass;
 	bool			bDamage;
+	//
+	unsigned int	uParent;	// 0xffff or -1 means parent is null
+	unsigned int	uNumChild;
+	unsigned int*	pChildren;
 	// instance ?
 
 	SMesh() { memset(this, 0, sizeof(SMesh)); }
@@ -104,10 +109,25 @@ struct SMesh
 
 struct SScene
 {
-	std::string		strName;
-	SCamera			camera;
+	// shared data
 	unsigned int	uNumMesh;
 	SMesh*			pMesh;
+	//unsigned int	uNumSub;
+	//SSubMesh*		pSubMesh;
+	unsigned int	uNumGeom;
+	SGeometry*		pGeom;
+	unsigned int	uNumMate;
+	SMaterial*		pMate;
+	unsigned int	uNumLitPoint;
+	SLitPoint*		pLitPoint;
+	unsigned int	uNumLitSpot;
+	SLitSpot*		pLitSpot;
+	unsigned int	uNumLitDire;
+	SLitDire*		pLitDire;
+	// scene data
+	std::string		strName;
+	SCamera			camera;
+	SMesh*			pRoot;
 
 	SScene() { memset(this, 0, sizeof(SScene)); }
 };
