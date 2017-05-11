@@ -352,7 +352,7 @@ struct SceneRW
 {
 private:
 	template<class T>
-	void write(const T* pData, const std::string& strFile, unsigned int uFrom = 0)
+	static void write(const T* pData, const std::string& strFile, unsigned int uFrom = 0)
 	{
 		std::ofstream ofs(strFile, std::ios::binary);
 		ofs.seekp(uFrom);
@@ -363,7 +363,7 @@ private:
 	}
 
 	template<class T>
-	void read(T& data, const std::string& strFile, unsigned int uFrom = 0)
+	static void read(T& data, const std::string& strFile, unsigned int uFrom = 0)
 	{
 		std::ifstream ifs(strFile, std::ios::binary);
 		ifs.seekg(uFrom);
@@ -376,12 +376,12 @@ private:
 	}
 
 public:
-	void sceneWrite(const SDScene* pScene, const std::string& strFile)
+	static void sceneWrite(const SDScene* pScene, const std::string& strFile)
 	{
 		write<SDScene>(pScene, strFile);
 	}
 
-	void sceneRead(SDScene& scene, const std::string& strFile)
+	static void sceneRead(SDScene& scene, const std::string& strFile)
 	{
 		read<SDScene>(scene, strFile);
 	}

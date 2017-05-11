@@ -11,6 +11,10 @@ public:
 	void write(const std::string& strFile, const aiScene* pScene);
 	void read(const std::string& strFile);
 
+protected:
+	bool getSDScene(void* pOutScene, const aiScene* pInScene);
+
 private:
-	aiScene*	mpScene;
+	//aiScene*	mpScene;
+	//SDScene*	mpSDScene;
 };

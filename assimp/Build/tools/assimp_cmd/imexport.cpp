@@ -1,5 +1,6 @@
 #include "imexport.h"
 #include <fstream>
+#include "scenedata.h"
 
 bool ImExport::load(const std::string& strInFile, const std::string& strFormat, const std::string& strContent, const std::string& strOutFile)
 {
@@ -19,14 +20,34 @@ bool ImExport::load(const std::string& strInFile, const std::string& strFormat, 
 		aiProcess_OptimizeMeshes;
 	//flags |= aiProcess_GenNormals;
 	//flags |= aiProcess_CalcTangentSpace;
-	const aiScene* pScene = importer.ReadFile(strInFile, flags);
+	const aiScene* pInScene = importer.ReadFile(strInFile, flags);
 											  
-	if (!pScene)
+	if (!pInScene)
 	{
 		return false;
 	}
-	write(strOutFile, pScene);
-	read("out");
+	SDScene outScene;
+	getSDScene(&outScene, pInScene);
+	SceneRW::sceneWrite(&outScene, "outSceneFile.dat");
+	//write(strOutFile, pInScene);
+	//read("out");
+	return true;
+}
+
+bool ImExport::getSDScene(void* pOutScene, const aiScene* pInScene)
+{
+	if (nullptr == pOutScene || nullptr == pInScene)
+		return false;
+	SDScene* pScene = (SDScene*)pOutScene;
+	if (pInScene->mNumMeshes <= 0 || nullptr == pInScene->mMeshes)
+		return false;
+	pScene->uNumMesh = pInScene->mNumMeshes;
+	pScene->pBlob = new SDBlob;
+	pScene->pBlob->pMesh = new SDMesh[pScene->uNumMesh];
+	for (unsigned int i = 0; i < pScene->uNumMesh; i++)
+	{
+		;
+	}
 	return true;
 }
 
