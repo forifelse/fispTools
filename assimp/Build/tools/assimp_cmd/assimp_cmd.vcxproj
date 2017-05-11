@@ -118,8 +118,10 @@
       <GenerateDebugInformation>Debug</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>
       </IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>E:/Projects/fispToos/assimp/Build/tools/assimp_cmd/Debug/assimp.lib</ImportLibrary>
-      <ProgramDataBaseFile>E:/Projects/fispToos/assimp/Build/tools/assimp_cmd/Debug/assimp.pdb</ProgramDataBaseFile>
+      <ImportLibrary>
+      </ImportLibrary>
+      <ProgramDataBaseFile>
+      </ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version>
       </Version>
@@ -164,8 +166,10 @@
       <GenerateDebugInformation>Debug</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>
       </IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>E:/Projects/fispToos/assimp/Build/tools/assimp_cmd/Debug/assimp.lib</ImportLibrary>
-      <ProgramDataBaseFile>E:/Projects/fispToos/assimp/Build/tools/assimp_cmd/Debug/assimp.pdb</ProgramDataBaseFile>
+      <ImportLibrary>
+      </ImportLibrary>
+      <ProgramDataBaseFile>
+      </ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version>
       </Version>
@@ -211,8 +215,10 @@
       <GenerateDebugInformation>No</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>
       </IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>E:/Projects/fispToos/assimp/Build/tools/assimp_cmd/Release/assimp.lib</ImportLibrary>
-      <ProgramDataBaseFile>E:/Projects/fispToos/assimp/Build/tools/assimp_cmd/Release/assimp.pdb</ProgramDataBaseFile>
+      <ImportLibrary>
+      </ImportLibrary>
+      <ProgramDataBaseFile>
+      </ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version>
       </Version>
@@ -257,8 +263,10 @@
       <GenerateDebugInformation>No</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>
       </IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>E:/Projects/fispToos/assimp/Build/tools/assimp_cmd/Release/assimp.lib</ImportLibrary>
-      <ProgramDataBaseFile>E:/Projects/fispToos/assimp/Build/tools/assimp_cmd/Release/assimp.pdb</ProgramDataBaseFile>
+      <ImportLibrary>
+      </ImportLibrary>
+      <ProgramDataBaseFile>
+      </ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version>
       </Version>
