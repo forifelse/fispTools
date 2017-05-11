@@ -41,12 +41,22 @@ bool ImExport::getSDScene(void* pOutScene, const aiScene* pInScene)
 	SDScene* pScene = (SDScene*)pOutScene;
 	if (pInScene->mNumMeshes <= 0 || nullptr == pInScene->mMeshes)
 		return false;
-	pScene->uNumMesh = pInScene->mNumMeshes;
 	pScene->pBlob = new SDBlob;
+	//
+	pScene->uNumMesh = pInScene->mNumMeshes;
 	pScene->pBlob->pMesh = new SDMesh[pScene->uNumMesh];
 	for (unsigned int i = 0; i < pScene->uNumMesh; i++)
 	{
-		;
+		//pScene->uNumGeom = pInScene->mMeshes[0]->
+	}
+	if (pInScene->mNumMaterials > 0)
+	{
+		pScene->uNumMate = pInScene->mNumMaterials;
+		pScene->pBlob->pMate = new SDMaterial[pScene->uNumMate];
+		for (unsigned int i = 0; i < pScene->uNumMate; i++)
+		{
+			;
+		}
 	}
 	return true;
 }
