@@ -1,15 +1,15 @@
 #pragma once
 #include <fstream>
 
-struct SCamera
+struct SDCamera
 {
 	float	tx,ty,tz;
 	float	rx,ry,rz;
 
-	SCamera() { memset(this, 0, sizeof(SCamera)); }
+	SDCamera() { memset(this, 0, sizeof(SDCamera)); }
 };
 
-struct SLitPoint
+struct SDLitPoint
 {
 	std::string	strName;
 	float	x,y,z;
@@ -17,23 +17,23 @@ struct SLitPoint
 	float	radius;
 	float	intensity;
 
-	SLitPoint() { memset(this, 0, sizeof(SLitPoint)); }
+	SDLitPoint() { memset(this, 0, sizeof(SDLitPoint)); }
 };
 
-struct SLitSpot : public SLitPoint
+struct SDLitSpot : public SDLitPoint
 {
 	float	toward;
 	float	inner, outer;
 
-	SLitSpot() { memset(this, 0, sizeof(SLitSpot)); }
+	SDLitSpot() { memset(this, 0, sizeof(SDLitSpot)); }
 };
 
-struct SLitDire
+struct SDLitDire
 {
-	SLitDire() { memset(this, 0, sizeof(SLitDire)); }
+	SDLitDire() { memset(this, 0, sizeof(SDLitDire)); }
 };
 
-struct SMaterial
+struct SDMaterial
 {
 	std::string	strName;
 	std::string	strColorTexture;
@@ -48,15 +48,15 @@ struct SMaterial
 	float	shinness;
 	bool	bTwoSided;
 
-	SMaterial() { memset(this, 0, sizeof(SMaterial)); }
+	SDMaterial() { memset(this, 0, sizeof(SDMaterial)); }
 };
 
-struct STexture
+struct SDTexture
 {
 
 };
 
-struct SGeometry
+struct SDGeometry
 {
 	unsigned int	uNumVertex;
 	float*			pVertices;
@@ -71,26 +71,26 @@ struct SGeometry
 	unsigned int	uNumVerClr;
 	float*			pVerClr;
 
-	SGeometry() { memset(this, 0, sizeof(SGeometry)); }
+	SDGeometry() { memset(this, 0, sizeof(SDGeometry)); }
 };
 
-struct SSubMesh
+struct SDSubMesh
 {
 	unsigned int	uGeomIdx;
 	unsigned int	uMateIdx;
 	unsigned int	uSubIndex;
 	bool			bCollision;
 
-	SSubMesh() { memset(this, 0, sizeof(SSubMesh)); }
+	SDSubMesh() { memset(this, 0, sizeof(SDSubMesh)); }
 };
 
-struct SMesh
+struct SDMesh
 {
 	std::string		strName;
 	bool			bVisible;
-	SSubMesh		subFirst;
+	SDSubMesh		subFirst;
 	unsigned int	uNumSubOther;
-	SSubMesh*		pSubOther;
+	SDSubMesh*		pSubOther;
 	//
 	float			trans[16];
 	//float			tx, ty, tz, rx, ry, rz, sx, sy, sz;
@@ -105,32 +105,34 @@ struct SMesh
 	unsigned int*	pChildren;
 	// instance ?
 
-	SMesh() { memset(this, 0, sizeof(SMesh)); }
+	SDMesh() { memset(this, 0, sizeof(SDMesh)); }
 };
 
-struct SRoot
+struct SDRoot
 {
 	unsigned int	uNumChild;
 	unsigned int*	pChildren;
+
+	SDRoot() { memset(this, 0, sizeof(SDRoot)); }
 };
 
-struct SBank
+struct SDBlob
 {
-	// bank data
-	SMesh*			pMesh;
-	SGeometry*		pGeom;
-	SMaterial*		pMate;
-	SLitPoint*		pLitPoint;
-	SLitSpot*		pLitSpot;
-	SLitDire*		pLitDire;
+	// Blob data
+	SDMesh*			pMesh;
+	SDGeometry*		pGeom;
+	SDMaterial*		pMate;
+	SDLitPoint*		pLitPoint;
+	SDLitSpot*		pLitSpot;
+	SDLitDire*		pLitDire;
 
-	SBank() { memset(this, 0, sizeof(SBank)); }
+	SDBlob() { memset(this, 0, sizeof(SDBlob)); }
 };
 
-struct SScene
+struct SDScene
 {
-	// bank data
-	SBank*			pBank;
+	// Blob data
+	SDBlob*			pBlob;
 	unsigned int	uNumMesh;
 	unsigned int	uNumGeom;
 	unsigned int	uNumMate;
@@ -139,10 +141,10 @@ struct SScene
 	unsigned int	uNumLitDire;
 	// scene data
 	std::string		strName;
-	SCamera			camera;
-	SRoot*			pRoot;
+	SDCamera		camera;
+	SDRoot*			pRoot;
 
-	SScene() { memset(this, 0, sizeof(SScene)); }
+	SDScene() { memset(this, 0, sizeof(SDScene)); }
 };
 
 struct SceneRW
@@ -173,13 +175,13 @@ private:
 	}
 
 public:
-	void sceneWrite(const SScene* pScene, const std::string& strFile)
+	void sceneWrite(const SDScene* pScene, const std::string& strFile)
 	{
-		write<SScene>(pScene, strFile);
+		write<SDScene>(pScene, strFile);
 	}
 
-	void sceneRead(SScene& scene, const std::string& strFile)
+	void sceneRead(SDScene& scene, const std::string& strFile)
 	{
-		read<SScene>(scene, strFile);
+		read<SDScene>(scene, strFile);
 	}
 };
