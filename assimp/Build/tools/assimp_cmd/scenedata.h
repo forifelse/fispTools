@@ -91,48 +91,57 @@ struct SDLitDire
 struct SDMaterial
 {
 	std::string	strName;
+	std::string strMaterialName;
 	std::string	strColorTexture;
 	std::string	strNormalMap;
 	std::string	strSpecularMap;
+	std::string strLightMap;
+	std::string strEmissiveMap;
 	float	ambientR, ambientG, ambientB;
-	float	diffuseR, diffuseG, diffuseB;
+	float	diffuseR, diffuseG, diffuseB, diffuseA;
 	float	specularR, specularG, specularB;
 	float	emissiveR, emissiveG, emissiveB;
-	float	metallic;
-	float	roughness;
 	float	shinness;
 	bool	bTwoSided;
+	float	metallic;
+	float	roughness;
 
 	SDMaterial() { memset(this, 0, sizeof(SDMaterial)); }
 	SDMaterial(const SDMaterial& o)
 	{
 		strName = o.strName;
+		strMaterialName = o.strMaterialName;
 		strColorTexture = o.strColorTexture;
 		strNormalMap = o.strNormalMap;
 		strSpecularMap = o.strSpecularMap;
+		strLightMap = o.strLightMap;
+		strEmissiveMap = o.strEmissiveMap;
 		ambientR = o.ambientR; ambientG = o.ambientG; ambientB = o.ambientB;
-		diffuseR = o.diffuseR; diffuseG = o.diffuseG; diffuseB = o.diffuseB;
+		diffuseR = o.diffuseR; diffuseG = o.diffuseG; diffuseB = o.diffuseB; diffuseA = o.diffuseA;
 		specularR = o.specularR; specularG = o.specularG; specularB = o.specularB;
 		emissiveR = o.emissiveR; emissiveG = o.emissiveG; emissiveB = o.emissiveB;
-		metallic = o.metallic;
-		roughness = o.roughness;
 		shinness = o.shinness;
 		bTwoSided = o.bTwoSided;
+		metallic = o.metallic;
+		roughness = o.roughness;
 	}
 	SDMaterial& operator=(const SDMaterial& o)
 	{
 		strName = o.strName;
+		strMaterialName = o.strMaterialName;
 		strColorTexture = o.strColorTexture;
 		strNormalMap = o.strNormalMap;
 		strSpecularMap = o.strSpecularMap;
+		strLightMap = o.strLightMap;
+		strEmissiveMap = o.strEmissiveMap;
 		ambientR = o.ambientR; ambientG = o.ambientG; ambientB = o.ambientB;
-		diffuseR = o.diffuseR; diffuseG = o.diffuseG; diffuseB = o.diffuseB;
+		diffuseR = o.diffuseR; diffuseG = o.diffuseG; diffuseB = o.diffuseB; diffuseA = o.diffuseA;
 		specularR = o.specularR; specularG = o.specularG; specularB = o.specularB;
 		emissiveR = o.emissiveR; emissiveG = o.emissiveG; emissiveB = o.emissiveB;
-		metallic = o.metallic;
-		roughness = o.roughness;
 		shinness = o.shinness;
 		bTwoSided = o.bTwoSided;
+		metallic = o.metallic;
+		roughness = o.roughness;
 		return *this;
 	}
 	bool operator<(const SDMaterial& o)
@@ -150,29 +159,23 @@ struct SDGeometry
 {
 	unsigned int	uNumVertex;
 	float*			pVertices;
-	unsigned int	uNumFace;
-	float*			pTriangles;
-	unsigned int	uNumUV;
+	//unsigned int	uNumFace;
+	unsigned int	uNumIndex;
+	unsigned int*	pIndex;
 	float*			pUV;
-	unsigned int	uNumNor;
 	float*			pNormal;
-	unsigned int	uNumTang;
 	float*			pTangent;
-	unsigned int	uNumVerClr;
 	float*			pVerClr;
 
 	SDGeometry() { memset(this, 0, sizeof(SDGeometry)); }
 	SDGeometry(const SDGeometry& o)
 	{
 		uNumVertex = o.uNumVertex;
-		uNumFace = o.uNumFace;
-		uNumUV = o.uNumUV;
-		uNumNor = o.uNumNor;
-		uNumTang = o.uNumTang;
-		uNumVerClr = o.uNumVerClr;
+		//uNumFace = o.uNumFace;
+		uNumIndex = o.uNumIndex;
 		// ?
 		pVertices = o.pVertices;
-		pTriangles = o.pTriangles;
+		pIndex = o.pIndex;
 		pUV = o.pUV;
 		pNormal = o.pNormal;
 		pTangent = o.pTangent;
@@ -182,14 +185,11 @@ struct SDGeometry
 	SDGeometry& operator=(const SDGeometry& o)
 	{
 		uNumVertex = o.uNumVertex;
-		uNumFace = o.uNumFace;
-		uNumUV = o.uNumUV;
-		uNumNor = o.uNumNor;
-		uNumTang = o.uNumTang;
-		uNumVerClr = o.uNumVerClr;
+		//uNumFace = o.uNumFace;
+		uNumIndex = o.uNumIndex;
 		// ?
 		pVertices = o.pVertices;
-		pTriangles = o.pTriangles;
+		pIndex = o.pIndex;
 		pUV = o.pUV;
 		pNormal = o.pNormal;
 		pTangent = o.pTangent;

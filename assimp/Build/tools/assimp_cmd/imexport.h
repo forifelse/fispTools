@@ -12,7 +12,12 @@ public:
 	void read(const std::string& strFile);
 
 protected:
-	bool getSDScene(void* pOutScene, const aiScene* pInScene);
+	bool getScene(void* pOutScene, const aiScene* pInScene);
+
+private:
+	bool getGeom(void* pDest, const aiMesh* pSrc);
+	bool getMaterial(void* pDest, const aiMaterial* pSrc);
+	bool getMesh(void* pDest, const aiMesh* pSrc);
 
 private:
 	//aiScene*	mpScene;
