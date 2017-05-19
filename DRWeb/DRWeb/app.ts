@@ -21,8 +21,29 @@
 
 }
 
+class Args {
+
+    constructor() {
+    }
+
+    split(strIn: string): string[] {
+        var vstrRe: string[] = [];
+        var vstr: string[] = strIn.split('?');
+        if (vstr.length > 1) {
+            var vsubstr: string[] = vstr[1].split('&');
+            if (vsubstr.length >= 2) {
+
+            }
+        }
+        return vstrRe;
+    }
+}
+var gArgs: Args = new Args();
+
 window.onload = () => {
-    var el = document.getElementById('content');
+    var url = window.location.href;
+    gArgs.split(url);
+    //var el = document.getElementById('content');
     //var greeter = new Greeter(el);
     //greeter.start();
 };

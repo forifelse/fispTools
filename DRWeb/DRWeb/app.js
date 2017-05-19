@@ -15,6 +15,23 @@ var Greeter = (function () {
     };
     return Greeter;
 }());
+var Args = (function () {
+    function Args() {
+    }
+    Args.prototype.split = function (strIn) {
+        var vstrRe = [];
+        var vstr = strIn.split('?');
+        if (vstr.length > 1) {
+            var vsubstr = vstr[1].split('&');
+            if (vsubstr.length >= 2) {
+            }
+        }
+        return vstrRe;
+    };
+    return Args;
+}());
+var gArgs = new Args();
 window.onload = function () {
-    var el = document.getElementById('content');
+    var url = window.location.href;
+    gArgs.split(url);
 };
